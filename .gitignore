@@ -1,0 +1,8 @@
+
+*.class
+
+java/\.classpath
+
+java/\.project
+
+java/doc/
