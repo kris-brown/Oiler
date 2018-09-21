@@ -7,4 +7,4 @@ def P001()->int:
     return tot
 
 if __name__=='__main__':
-    P001()
+    print(P001())

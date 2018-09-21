@@ -5,7 +5,7 @@ def P002()->int:
     ultimate    = 1
     current     = 2
     tot         = 0
-    
+
     # Main loop
     while current < 4e6:
         if current % 2 == 0 :
@@ -17,4 +17,4 @@ def P002()->int:
 
     return tot
 if __name__=='__main__':
-    P002()
+    print(P002())
