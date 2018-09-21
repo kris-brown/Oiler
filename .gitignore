@@ -6,3 +6,7 @@ java/\.classpath
 java/\.project
 
 java/doc/
+
+haskell/.stack-work/
+haskell/haskell.cabal
+*~
