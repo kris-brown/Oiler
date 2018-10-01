@@ -1,10 +1,9 @@
 module Lib
-    ( prime, primes
+    ( prime, primes, slice, square,sqrt'
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
 
+-- Math related
 prime :: Int -> Bool
 prime n = length (takeWhile divides factors) == length factors
  where
@@ -14,3 +13,14 @@ prime n = length (takeWhile divides factors) == length factors
 
 primes :: [Int]
 primes = filter prime [2..]
+
+sqrt' :: Integral a => a -> Float
+sqrt' = sqrt . fromIntegral
+
+square :: Int -> Bool
+square n = ceiling floatrt == floor floatrt
+  where floatrt = sqrt' n
+
+-- List related
+slice  :: Int -> Int -> [a] -> [a]
+slice from to = take (to - from) . drop from
